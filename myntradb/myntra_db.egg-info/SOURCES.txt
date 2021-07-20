@@ -1,0 +1,13 @@
+setup.py
+myntra_db.egg-info/PKG-INFO
+myntra_db.egg-info/SOURCES.txt
+myntra_db.egg-info/dependency_links.txt
+myntra_db.egg-info/top_level.txt
+myntradb/__init__.py
+myntradb/settings.py
+myntradb/urls.py
+myntradb/wsgi.py
+myntradb/user/__init__.py
+myntradb/user/models.py
+myntradb/user/migrations/0001_initial.py
+myntradb/user/migrations/__init__.py
