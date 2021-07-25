@@ -9,19 +9,19 @@ def create_user_object_to_user_json(user):
         "phone_number": user.phone_number,
         "gender": user.gender,
         "primary_address": {
-            "village": user.primary_address__village,
-            "landmark": user.primary_address__landmark,
-            "taluka": user.primary_address__taluka,
-            "district": user.primary_address__district,
-            "state": user.primary_address__state,
-            "pincode": user.primary_address__pincode
+            "village": user.primary_address.village,
+            "landmark": user.primary_address.landmark,
+            "taluka": user.primary_address.taluka,
+            "district": user.primary_address.district,
+            "state": user.primary_address.state,
+            "pincode": user.primary_address.pincode
             },
         "shipping_address": {
-            "village": user.shipping_address__village,
-            "landmark": user.shipping_address__landmark,
-            "taluka": user.shipping_address__taluka,
-            "district": user.shipping_address__district,
-            "state": user.shipping_address__state,
-            "pincode": user.shipping_address__pincode
+            "village": user.shipping_address.village,
+            "landmark": user.shipping_address.landmark,
+            "taluka": user.shipping_address.taluka,
+            "district": user.shipping_address.district,
+            "state": user.shipping_address.state,
+            "pincode": user.shipping_address.pincode
             }
         }
