@@ -7,9 +7,8 @@ from flask import request
 
 app = Flask(__name__)
 api = Api(app)
-
-
 api.add_resource(Ping, '/ping/')
+api.add_resource(User, '/User/')
 
 
 
