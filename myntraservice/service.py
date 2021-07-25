@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_restful import Resource, Api
-from handler import Ping
+from handler.ping import Ping
 
 from flask import request 
 
