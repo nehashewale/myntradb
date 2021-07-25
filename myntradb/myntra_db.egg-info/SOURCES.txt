@@ -11,4 +11,5 @@ myntradb/user/__init__.py
 myntradb/user/models.py
 myntradb/user/migrations/0001_initial.py
 myntradb/user/migrations/0002_remove_user_date_of_birth.py
+myntradb/user/migrations/0003_alter_user_phone_number.py
 myntradb/user/migrations/__init__.py
