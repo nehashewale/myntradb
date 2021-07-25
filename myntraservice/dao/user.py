@@ -1,3 +1,5 @@
+import django;django.setup()
+
 from myntradb.user.models import User, Address
 
 def get_user_by_phone_number(phone):

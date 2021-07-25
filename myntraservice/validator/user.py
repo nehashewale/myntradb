@@ -8,12 +8,12 @@ schema = {
     "first_name": {"type": "string"},
     "middle_name": {"type": "string"},
     "last_name": { "type": "string"},
-    "phone_no": {"type": "integer"},
+    "phone_number": {"type": "integer"},
     "gender": {"type": "string"},
-    "primay_address": {
+    "primary_address": {
       "type": "object",
       "properties": {
-        "vilaage": {"type": "string"},
+        "village": {"type": "string"},
         "landmark": {"type": "string"},
         "taluka": { "type": "string"},
         "district": {"type": "string" },
@@ -21,13 +21,13 @@ schema = {
         "pincode": {"type": "integer" }
       },
       "required": [
-        "vilaage","landmark","taluka","district", "state", "pincode"
+        "village","landmark","taluka","district", "state", "pincode"
       ]
     },
     "shipping_address": {
       "type": "object",
       "properties": {
-        "vilaage": {"type": "string"},
+        "village": {"type": "string"},
         "landmark": {"type": "string"},
         "taluka": { "type": "string"},
         "district": {"type": "string" },
@@ -35,7 +35,7 @@ schema = {
         "pincode": {"type": "integer" }
       },
       "required": [
-        "vilaage","landmark","taluka","district", "state", "pincode"
+        "village","landmark","taluka","district", "state", "pincode"
       ]
     }
   }
