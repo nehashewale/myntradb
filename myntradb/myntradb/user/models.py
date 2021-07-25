@@ -14,7 +14,7 @@ class User(models.Model):
    first_name = models.CharField(max_length=20)
    middle_name = models.CharField(max_length=20)
    last_name = models.CharField(max_length=20)
-   phone_number = models.CharField(min_length=20)
+   phone_number = models.CharField(max_length=20)
    GENDER_CHOICES = (
         (u'M', u'Male'),
         (u'F', u'Female'),
