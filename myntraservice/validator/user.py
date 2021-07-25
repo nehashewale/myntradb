@@ -8,7 +8,7 @@ schema = {
     "first_name": {"type": "string"},
     "middle_name": {"type": "string"},
     "last_name": { "type": "string"},
-    "phone_number": {"type": "integer"},
+    "phone_number": {"type": "string"},
     "gender": {"type": "string"},
     "primary_address": {
       "type": "object",
