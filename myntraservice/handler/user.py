@@ -28,7 +28,11 @@ class User(Resource):
         phone_number = params['phone_number']
 
         user = get_user_by_phone_number(phone_number)
+        if user == None:
+            return {"response": "user not found"}
+            
         user_json = create_user_object_to_user_json(user)
+        
         return  {"response" : user_json}
         
         
