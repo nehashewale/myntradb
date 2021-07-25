@@ -25,3 +25,12 @@ def create_user_object_to_user_json(user):
             "pincode": user.shipping_address.pincode
             }
         }
+
+
+
+def multiple_user_view(users):
+    view_user = []
+    for user in users:
+        u = create_user_object_to_user_json(user)
+        view_user.append(u)
+    return view_user

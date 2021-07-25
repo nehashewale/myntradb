@@ -37,3 +37,9 @@ def create_user(user_data):
         shipping_address = shipping_address,
         )
     return user
+
+
+
+def get_all_users():
+    users = User.objects.all()
+    return users 
