@@ -39,6 +39,32 @@ def create_user(user_data):
     return user
 
 
+def update_user(user,user_data):
+
+    user.first_name = user_data["first_name"]
+    user.middle_name = user_data["middle_name"]
+    user.last_name = user_data["last_name"]
+    user.gender = user_data["gender"]
+
+    user.primary_address.landmark= user_data["primary_address"]["landmark"]
+    user.primary_address.village = user_data["primary_address"]["village"]
+    user.primary_address.taluka = user_data["primary_address"]["taluka"]
+    user.primary_address.district = user_data["primary_address"]["district"]
+    user.primary_address.state = user_data["primary_address"]["state"]
+    user.primary_address.pincode = user_data["primary_address"]["pincode"]
+
+    user.shipping_address.landmark= user_data["shipping_address"]["landmark"]
+    user.shipping_address.village = user_data["shipping_address"]["village"]
+    user.shipping_address.taluka = user_data["shipping_address"]["taluka"]
+    user.shipping_address.district = user_data["shipping_address"]["district"]
+    user.shipping_address.state = user_data["shipping_address"]["state"]
+    user.shipping_address.pincode = user_data["shipping_address"]["pincode"]
+
+    user.save()
+    return 
+
+
+
 
 def get_all_users():
     users = User.objects.all()
