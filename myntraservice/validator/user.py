@@ -41,9 +41,9 @@ schema = {
   }
 }
 
-def validate_user(payload):
+def validate_user_schema(body):
     try:
-        validate(payload,schema)
+        validate(body,schema)
         return True
     except:
         return False
