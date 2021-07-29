@@ -21,5 +21,10 @@ class User(models.Model):
     )
    gender = models.CharField(max_length=2, choices=GENDER_CHOICES)
    primary_address = models.ForeignKey(Address,on_delete=models.CASCADE,related_name = 'primary_address')
-   shipping_address = models.ForeignKey(Address,on_delete=models.CASCADE,related_name='shipping_address')
  
+
+
+class ShippingAddress(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    shipping_address = models.ForeignKey(Address,on_delete=models.CASCADE,related_name='shipping_address')
+
